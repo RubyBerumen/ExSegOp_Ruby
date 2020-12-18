@@ -59,11 +59,11 @@ public class FloydWarshall
         int numberofvertices;
  
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the number of vertices");
+        System.out.println("Ingresa el numero de vertices");
         numberofvertices = scan.nextInt();
  
         adjacency_matrix = new int[numberofvertices + 1][numberofvertices + 1];
-        System.out.println("Enter the Weighted Matrix for the graph");
+        System.out.println("Ingresa el peso de la matriz para el grafo");
         for (int source = 1; source <= numberofvertices; source++)
         {
             for (int destination = 1; destination <= numberofvertices; destination++)
@@ -88,14 +88,3 @@ public class FloydWarshall
     }
 }
 
-
-/*
-public class FloydWarshall {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
-*/
